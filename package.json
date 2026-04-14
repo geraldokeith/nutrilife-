@@ -1,0 +1,25 @@
+{
+  "name": "nutrilife",
+  "version": "1.0.0",
+  "description": "A nutrition-based food management system",
+  "type": "module",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && python manage.py runserver",
+    "build": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "start": "concurrently \"npm run dev\" \"npm run dev:backend\""
+  },
+  "keywords": [
+    "nutrition",
+    "wellness",
+    "health",
+    "food-management"
+  ],
+  "author": "Joseph",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
