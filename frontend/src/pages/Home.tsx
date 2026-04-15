@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
+import eatHealthyImg from '../assets/eat healthy.jpg';
 
 export default function Home() {
   // Animation variants
@@ -104,9 +105,13 @@ export default function Home() {
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="text-8xl mb-4"
+                className="mb-4 flex justify-center"
               >
-                🍎
+                <img 
+                  src={eatHealthyImg} 
+                  alt="Eat Healthy" 
+                  className="w-64 h-64 object-cover rounded-xl"
+                />
               </motion.div>
               <p className="text-2xl font-bold text-orange-600">Eat Healthy, Live Better</p>
             </motion.div>
