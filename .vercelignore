@@ -1,0 +1,46 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backend
+backend/
+*.py
+*.pyc
+venv/
+env/
+
+# Documentation
+*.md
+*.pdf
+README.md
+
+# Old build files
+dist/
+build/
+.cache/
+
+# Lock files (optional, but helps with consistency)
+package-lock.json
